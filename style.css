@@ -1,0 +1,83 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004a99; /* Колір Політехніки */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #004a99;
+    border-bottom: 2px solid #004a99;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #333;
+}
+
+/* Адаптивні контейнери для карт і відео */
+.map-container,
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Співвідношення сторін 16:9 */
+    margin: 20px 0;
+}
+
+.map-container iframe,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Контейнер для віджетів (Facebook, Погода) */
+.widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    border-bottom: none; /* Не потрібна лінія для останнього блоку */
+}
+
+.widgets-container div {
+    flex-basis: 340px; /* Базова ширина для кожного віджета */
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
